@@ -1,0 +1,60 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #F95758;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12.8px;
+  padding: .8rem;
+  margin-bottom: 200px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  outline: none;
+  cursor: hover;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-weight: normal;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+section > div {
+  width: 32%;
+}
+
+
+
+/* YOUR CODE HERE */
+/* Set a transition on everything with the class of bug */
+.bug {
+
+}
+
+
+/* Use a transform to animate the first bug on hover */
+.bug1:hover {
+
+}
+
+/* Use a transform to animate the second bug on hover */
+
+/* Use TWO transforms to animate the third bug on hover */

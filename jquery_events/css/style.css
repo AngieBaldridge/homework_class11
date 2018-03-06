@@ -1,0 +1,122 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  height: 4000px;
+}
+
+div {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: #EC4945;
+  border-radius: 50%;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+section {
+  padding: 50px 0;
+}
+
+/*-------- FORM -------------*/
+form {
+  border: 3px solid #dfdfdf;
+  padding: 40px;
+  border-radius: 4px;
+  width: 40%;
+  margin: 20px auto;
+  text-align: left;
+}
+
+form button {
+  width: 100%;
+}
+
+button {
+  font-size: 16px;
+  border: none;
+  background-color: #6AF5E3;
+  padding: 10px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+}
+
+input {
+  border: 2px solid #dfdfdf;
+  padding: 8px 10px;
+  border-radius: 4px;
+  margin: 15px auto;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+a {
+  display: inline-block;
+  margin: 30px 8px 30px;
+  text-decoration: none;
+  background-color: #17A9F8; /* Blue */
+  color: white;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: all .3s ease-in-out;
+}
+
+
+
+
+/*This probably looks foreign now, but I am using keyframes to create my own animation.*/
+@-webkit-keyframes party-time {
+  0%   { background-color: #EC4945; }
+  100% { background-color: #FBDC3C; }
+}
+@keyframes party-time {
+  0%   { background-color: #EC4945; }
+  100% { background-color: #FBDC3C; }
+}
+
+.circle-two {
+ background-color: #FBDC3C;
+ display: none;
+}
+
+.square {
+  border-radius: 5px;
+  background-color: #FFA7C0;
+  display: block;
+  margin: 40px auto;
+  /* Here this transition will make sure that any properties that are changed animate. */
+  transition: all .3s ease-in-out
+}
+
+.ghost-effect {
+  background-color: white;
+}
+
+.party {
+ /*This probably looks foreign now.*/
+ -webkit-animation: party-time 300ms infinite;
+ animation: party-time 300ms infinite; /* IE 10+, Fx 29+ */
+}
+
+.correct {
+  border: 2px solid #00E364;
+}
